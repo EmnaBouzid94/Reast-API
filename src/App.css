@@ -36,3 +36,67 @@
     transform: rotate(360deg);
   }
 }
+h1{
+  text-decoration: underline;
+  color: darksalmon;
+  font-size: 50px;
+}
+button{
+  width:100px;
+  height:40px;
+  margin:5px;
+  border-radius: 5px;
+  border:1px solid;
+  background-color: darksalmon;
+}
+.contactcard{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-radius: 5%;
+  border: 1px solid;
+  justify-content: center;
+  width: 450px;
+  height: 300px;
+  margin: 30px;
+}
+.contactcard p{
+  align-self:flex-start ;
+  margin-left: 20%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  margin:3% 40%;
+  align-items: flex-start;
+  
+}
+input{
+  height: 30px;
+  width: 100%;
+  margin: 10px 0px;
+  font-size: 20px;
+}
+form button{
+  align-self: center;
+}
+span{
+  color:black;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+
+}
+.contactlist{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

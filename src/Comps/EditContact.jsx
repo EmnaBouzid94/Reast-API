@@ -19,7 +19,8 @@ class EditContact extends Component {
         Axios.put('http://localhost:3012/edit_contact/'+this.props.match.params.id,this.state)
     }
     render() { 
-        return ( 
+        return ( <div>
+            <h1>Edit Contact</h1>
             <form>
                 <span>Contact Name</span>
                 <input type="text" name="name" placeholder="name" onChange={this.HandleChange}></input>
@@ -29,6 +30,7 @@ class EditContact extends Component {
                 <input type="text" name="email" placeholder="email" onChange={this.HandleChange}></input>
                 <button onClick={this.EditContact}><Link to="/contacts">Add contact</Link></button>
             </form>
+            </div>
         );
     }
 }

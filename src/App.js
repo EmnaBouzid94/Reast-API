@@ -10,11 +10,11 @@ function App() {
     <div className="App">
       <Router>
         <Route path="/" render={()=>
-          <div>
+          <div className="div-button">
             <h1>Contact App</h1>
             <div>
-                <button><Link to="/contacts">Contact List</Link></button>
-                <button><Link to="/add_contact">Add Contact</Link></button>
+                <button><Link to="/contacts" style={{textDecoration:"none",color:"black",fontWeight:"bold"}}>Contact List</Link></button>
+                <button><Link to="/add_contact" style={{textDecoration:"none",color:"black",fontWeight:"bold"}}>Add Contact</Link></button>
             </div>
           </div>
         }/>

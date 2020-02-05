@@ -21,18 +21,23 @@ class ContactList extends Component {
     }
 
     render() {
+        console.log(this.state.ContactList)
         
-        return ( <div>
-            {this.state.ContactList.map(el=><div key={el._id}>
+        return ( <div >
+                <h1>Contact List</h1>
+                <div className="contactlist">
+            {this.state.ContactList.map(el=><div key={el._id} className="contactcard">
                 <p>Contact Name: {el.name}</p>
                 <p>Contact Phone: {el.phone}</p>
                 <p>Contact Email: {el.email}</p>
                 <div>
                 <button ><Link to={"/edit_contact/"+el._id}>Edit</Link></button>
-                <button onClick={()=>this.DeleteContact(el._id)}>Delete</button>
+                <button onClick={()=>this.DeleteContact(el._id)} style={{textDecoration:"none",color:"black",fontWeight:"bold"}}>Delete</button>
             </div>
+            
             </div>
                 )}
+                </div>
         </div> );
     }
 }

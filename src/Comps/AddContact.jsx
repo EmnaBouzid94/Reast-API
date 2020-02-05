@@ -15,7 +15,9 @@ class AddContact extends Component {
         Axios.post('http://localhost:3012/add_contact',this.state)
     }
     render() { 
-        return ( 
+        console.log(this.state)
+        return ( <div>
+            <h1>Add Contact</h1>
             <form>
                 <span>Contact Name</span>
                 <input type="text" name="name" placeholder="name" onChange={this.HandleChange}></input>
@@ -25,6 +27,7 @@ class AddContact extends Component {
                 <input type="text" name="email" placeholder="email" onChange={this.HandleChange}></input>
                 <button onClick={this.AddContact}><Link to="/contacts">Add contact</Link></button>
             </form>
+            </div>
         );
     }
 }
